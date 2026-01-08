@@ -37,7 +37,13 @@ UserSystemConfig QueryUserSystem() {
 }
 
 int main() {
-  std::cout << "Give me my cookie! (now/nvm): ";
+  for (int i = 0; i < 404; i++) {
+    if (i%2 == 0)
+      std::cout << "NOM";
+    else
+      std::cout << "nom";
+  }
+  std::cout << "\n\n\nGive me my cookie! (now/nom): ";
   std::string user_response;
   getline(std::cin, user_response);
   if (user_response != "now") {
